@@ -14,7 +14,7 @@ public class MailController {
 
     @RequestMapping("/mail/send")
     public String sendMail(Model model) {
-        mailService.push("receiver@gmail.com", "Subject", "Body test từ Lab8");
+        mailService.push("cuongndtv00020@fpt.edu.vn", "Subject", "Body test từ Lab8");
         model.addAttribute("message", "Mail đã được xếp vào hàng đợi!");
         return "mail/sent";
     }
